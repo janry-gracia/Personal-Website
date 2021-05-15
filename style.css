@@ -1,0 +1,140 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0%;
+    margin: 0%;
+}
+
+.position-relative{
+    overflow:hidden;
+}
+
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.box{
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    padding: auto;
+    margin: auto;
+}
+
+div.greeting{
+    
+    margin-top: 80px;
+    position: absolute;
+    color: black;
+    font-family: lemon;
+    left: 55%;
+    top: 50%;
+    transform: translate(-55%,-50%);
+}
+
+
+.text1, .text2{
+    font-weight: 400;
+    -webkit-text-stroke: #f2f92d;
+    -webkit-text-stroke-width: 7px;
+    font-size: 20em;
+ 
+}
+
+.text1{
+    letter-spacing: 120px;
+}
+.text2{
+    letter-spacing: 77px;
+}
+
+.text3{
+    font-weight: 300;
+    -webkit-text-stroke: #f2f92d;
+    -webkit-text-stroke-width: 2px;
+    font-size: 4em;
+    letter-spacing:7px;
+}
+
+.batman{
+    position: absolute;
+    top: -45.2%;
+    margin-left: 55%;
+    z-index: -1;
+}
+
+div.text4{
+    text-align: center;
+}
+
+.text4{
+    padding-top: 20px;
+    font-weight: 100;
+    color: white;
+    -webkit-text-stroke-width: 3px;
+    letter-spacing:30px;
+    font-size: 30px;
+    animation-name: clickme;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.greeting:hover, .box:hover{
+    cursor: pointer;
+}
+
+.box.box1transition{
+    transform: translate(-110%);
+}
+.box.box2transition{
+    transform: translate(110%);
+}
+
+.greeting{  
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes clickme {
+    0% {opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity:1;}
+}
+
+@keyframes hidecontent{
+    from{opacity: 1;}
+    to {opacity: 0;}
+}
+
+@font-face {
+    font-family: lemon;
+    src: url(fonts/LEMONMILK-Light.otf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: lemon;
+    src: url(fonts/LEMONMILK-Regular.otf);
+    font-weight: 200;
+}
+@font-face {
+    font-family:lemon ;
+    src: url(fonts/LEMONMILK-Medium.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: lemon;
+    src: url(fonts/LEMONMILK-Bold.otf);
+    font-weight: 400;
+}
+
